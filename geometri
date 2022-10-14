@@ -1,0 +1,46 @@
+#include <graphics.h>
+
+int main(int argc, char *argv[]){
+	initwindow(1920, 768);
+	
+	ellipse(380, 354, 0, 360, 275, 80);
+	setfillstyle(SOLID_FILL, BLUE);
+	floodfill(381, 355, 15);
+	
+	circle(83, 121, 47);
+	setfillstyle(SOLID_FILL, LIGHTGREEN);
+	floodfill(83, 121, 15);
+	
+	line(173, 296, 162, 231);
+	line(143, 304, 99, 231);
+	line(112, 318, 1, 230);
+
+	rectangle(1, 112, 162, 230);
+	setfillstyle(SOLID_FILL, YELLOW);
+	floodfill(4, 114, 15);
+	
+	line(487, 3, 265, 282);
+	line(487, 3, 340, 278);
+	line(487, 3, 414, 278);
+	line(487, 3, 279, 278);
+	line(487, 3, 554, 290);
+	
+	rectangle(186, 403, 221, 506);
+	setfillstyle(SOLID_FILL, BLACK);
+	floodfill(189, 405, 15);
+	
+	rectangle(250, 410, 285, 539);
+	rectangle(532, 404, 567, 485);
+	rectangle(595, 393, 630, 519);
+	
+	line(230, 548, 296, 548);
+	line(282, 535, 260, 535);
+	line(260, 535, 230, 548);
+//	line(296, 248, 282, 535);
+
+	rectangle(12,12,12,12);
+	setfillstyle(SOLID_FILL, LIGHTBLUE);
+	floodfill(1, 5, 15);
+	
+	getch();
+}
